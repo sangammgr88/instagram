@@ -4,10 +4,10 @@ import RightSide from "./Components/RightSide";
 
 function App() {
   return (
-    <div className="w-full flex  justify-between pl-6">
-      <LeftSide/>
-      <MiddleSide />
-      <RightSide />
+    <div className="w-full grid grid-cols-7 justify-between pl-6">
+      <div className=""><LeftSide/></div>
+     <div className="col-span-4"><MiddleSide/></div> 
+     <div><RightSide /></div> 
     </div>
   );
 }
